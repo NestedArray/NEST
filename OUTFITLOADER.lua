@@ -1,6 +1,8 @@
 --// DO NOT CHANGE ANYTHING BELOW UNLESS YOU KNOW WHAT YOUR DOING!
+local PlaceID = game.PlaceId
 
 repeat wait() until game:IsLoaded()
+if PlaceID ~= 4984400432 then game.Players.LocalPlayer:Kick("WRONG GAME! \n\n PLEASE REMOVE OUT OF YOUR AUTOEXEC FOLDER!") end
 
 local TS = game:GetService("TweenService")
 
@@ -16,7 +18,7 @@ local Board = game.Workspace:WaitForChild("Board")
 local SurfaceUI = Board:WaitForChild("SurfaceGui")
 local UsernameTitle = SurfaceUI:WaitForChild("Username")
 
-local PlaceID = game.PlaceId
+
 local AllIDs = {}
 local foundAnything = ""
 local actualHour = os.date("!*t").hour
@@ -24,8 +26,6 @@ local Deleted = false
 local Running = false
 
 local TESTCOUNT = 0
-
-if PlaceID ~= 4984400432 then game.Players.LocalPlayer:Kick("WRONG GAME! \n\n PLEASE REMOVE OUT OF YOUR AUTOEXEC FOLDER!") end
 
 UI.Name = "UI"
 UI.Parent = game.CoreGui
