@@ -2,7 +2,7 @@
 local PlaceID = game.PlaceId
 
 repeat wait() until game:IsLoaded()
-if PlaceID ~= 4984400432 then game.Players.LocalPlayer:Kick("WRONG GAME! \n\n PLEASE REMOVE OUT OF YOUR AUTOEXEC FOLDER!") end
+if PlaceID ~= 4984400432 then game.Players.LocalPlayer:Kick("WRONG GAME! \n\n\n\nPLEASE REMOVE OUT OF YOUR AUTOEXEC FOLDER!") end
 
 local TS = game:GetService("TweenService")
 
@@ -18,13 +18,11 @@ local Board = game.Workspace:WaitForChild("Board")
 local SurfaceUI = Board:WaitForChild("SurfaceGui")
 local UsernameTitle = SurfaceUI:WaitForChild("Username")
 
-
 local AllIDs = {}
 local foundAnything = ""
 local actualHour = os.date("!*t").hour
 local Deleted = false
 local Running = false
-
 local TESTCOUNT = 0
 
 UI.Name = "UI"
@@ -107,7 +105,7 @@ TS:Create(Credits, TweenInfo.new(0.3, Enum.EasingStyle.Sine, Enum.EasingDirectio
 TS:Create(Main, TweenInfo.new(0.3, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut), {TextTransparency = 0}):Play()
 TS:Create(Title, TweenInfo.new(0.3, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut), {TextTransparency = 0}):Play()
 
-task.wait(2.5)
+task.wait(2)
 
 function TPReturner()
 	local Site;
@@ -206,7 +204,7 @@ for i = _G.WaitTimer, 0, -1 do
 	end))
 
 	if i == 0 then
-		Main.Text = "TIMER ENDED"
+		Main.Text = "SESSION COMPLETED"
 
 		task.wait(2)
 
@@ -220,7 +218,7 @@ for i = _G.WaitTimer, 0, -1 do
 	--[[
 	
 	if UsernameTitle.Text == game.Players.LocalPlayer.Name then
-		Main.Text = "COMPLETED!"
+		Main.Text = "SESSION COMPLETED"
 
 		task.wait(3)
 
